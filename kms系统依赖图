@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2020-12-07T08:29:31.668Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="r4mQ1cav8BlYUxMif1rv" version="13.10.9" type="github">
+<mxfile host="app.diagrams.net" modified="2020-12-07T08:40:00.657Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.66 Safari/537.36" etag="czushC_hl_VREN5_jw9i" version="13.10.9" type="github">
   <diagram name="Page-1" id="bfe91b75-5d2c-26a0-9c1d-138518896778">
-    <mxGraphModel dx="923" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="915" dy="308" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -10,13 +10,10 @@
         <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-2" value="DLM Portal" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.terminal;" vertex="1" parent="1">
           <mxGeometry x="200" y="240" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-3" value="nginx" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.proxy_server;" vertex="1" parent="1">
-          <mxGeometry x="600" y="240" width="40" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-6" value="RabbitMq" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server;" vertex="1" parent="1">
           <mxGeometry x="560" y="120" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-10" value="Mysql" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server_storage;" vertex="1" parent="1">
+        <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-10" value="Mysql(主)" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server_storage;" vertex="1" parent="1">
           <mxGeometry x="760" y="80" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-11" value="solr4" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server_storage;" vertex="1" parent="1">
@@ -41,13 +38,19 @@
           <mxGeometry x="600" y="400" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-25" value="索引服务" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.web_server;" vertex="1" parent="1">
-          <mxGeometry x="400" y="320" width="40" height="40" as="geometry" />
+          <mxGeometry x="400" y="280" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-26" value="标签服务" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.web_server;" vertex="1" parent="1">
-          <mxGeometry x="480" y="320" width="40" height="40" as="geometry" />
+          <mxGeometry x="400" y="360" width="40" height="40" as="geometry" />
         </mxCell>
         <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-27" value="sharepoint" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server_storage;" vertex="1" parent="1">
           <mxGeometry x="120" y="360" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-30" value="Mysql(从)" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.server_storage;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2Q1vjw-IDnBS8j2Gpwa1-31" value="nginx" style="fontColor=#0066CC;verticalAlign=top;verticalLabelPosition=bottom;labelPosition=center;align=center;html=1;outlineConnect=0;fillColor=#CCCCCC;strokeColor=#6881B3;gradientColor=none;gradientDirection=north;strokeWidth=2;shape=mxgraph.networks.load_balancer;" vertex="1" parent="1">
+          <mxGeometry x="480" y="240" width="80" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
